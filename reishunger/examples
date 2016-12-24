@@ -1,0 +1,3 @@
+ReisHungerIntent wieviel wasser benötige ich für {WEIGHT} {TYPE_OF_UNIT} {TYPE_OF_RICE}
+ReisHungerIntent wieviel wasser brauche ich für {WEIGHT} {TYPE_OF_UNIT} {TYPE_OF_RICE}
+ReisHungerIntent {WEIGHT} {TYPE_OF_UNIT} {TYPE_OF_RICE}

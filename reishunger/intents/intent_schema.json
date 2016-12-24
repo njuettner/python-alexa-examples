@@ -1,0 +1,21 @@
+{
+  "intents": [
+    {
+      "intent": "ReisHungerIntent",
+      "slots": [
+        {
+          "name": "WEIGHT",
+          "type": "AMAZON.NUMBER"
+        },
+        {
+          "name": "TYPE_OF_UNIT",
+          "type": "TYPE_OF_UNIT"
+        },
+        {
+          "name": "TYPE_OF_RICE",
+          "type": "TYPE_OF_RICE"
+        }
+      ]
+    }
+  ]
+}

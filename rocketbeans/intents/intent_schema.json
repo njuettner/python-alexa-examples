@@ -1,0 +1,16 @@
+{
+  "intents": [
+    {
+      "intent": "ScheduleNowIntent"
+    },
+    {
+      "intent": "ScheduleAfterIntent"
+    },
+    {
+      "intent": "ScheduleLiveIntent"
+    },
+    {
+      "intent": "SchedulePrimeTimeIntent"
+    }
+  ]
+}
