@@ -12,9 +12,9 @@ url = 'https://api.tech26.de'
 
 def get_token():
     values_token = {'grant_type' : 'password',
-	      'username' : '',
-	      'password' : ''}
-    headers_token = { 'Authorization' : 'Basic ' }
+	      'username' : render_template('username'),
+	      'password' : render_template('password')}
+    headers_token = { 'Authorization' : 'Basic YW5kcm9pZDpzZWNyZXQ=' }
 
     response_token  = requests.post(url + '/oauth/token' , data=values_token, headers=headers_token)
     token_info = response_token.json()
