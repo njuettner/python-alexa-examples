@@ -106,19 +106,10 @@ def live():
 
     for i in aktueller_sendeplan['schedule']:
 
-        time_start_datetime = i['timeStart'].split("+")
-        time_start_date = i['timeStart'].split("T")
-        time_of_day = i['timeStart'].split("T")
-        time_of_day = time_of_day[1].split("+")
-        time_of_day = time_of_day[0]
-        time_of_day = time_of_day[:-3]
+        start_datetime = i['timeStart']
+        start = datetime.datetime.strptime(start_datetime, format)
 
-        start_datetime = datetime.datetime.strptime(time_start_datetime[0],
-            "%Y-%m-%dT%H:%M:%S")
-        start_date = datetime.datetime.strptime(time_start_date[0],
-            '%Y-%m-%d').date()
-
-        if start_datetime >= time_now and tomorrow > start_date and i['type'] == "live":
+        if start >= time_now and tomorrow > start.date() and i['type'] == "live":
             title.append("um {} kommt {} {}".format(time_of_day,
                 i['title'].encode('utf-8'),
                 i['topic'].encode('utf-8')).replace("&", "und"))
@@ -154,6 +145,3 @@ def session_ended():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0',debug=True)
-    app.run
-
-    @proper
