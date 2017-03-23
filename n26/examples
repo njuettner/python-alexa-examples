@@ -3,6 +3,6 @@ BankAccountIntent wie ist mein kontostatus
 BankAccountIntent gib mir meinen kontostatus
 BankAccountIntent gib mir den kontostatus
 LastTransactionIntent was war meine letzte transaktion
-TransactionsIntent was waren letzten {TRANSACTION_NUMBER} transaktionen
+TransactionsIntent was waren meine letzten {TRANSACTION_NUMBER} transaktionen
 LastTransactionIntent gib mir die letzte transaktion
 TransactionsIntent gib mir die letzten {TRANSACTION_NUMBER} transaktionen
